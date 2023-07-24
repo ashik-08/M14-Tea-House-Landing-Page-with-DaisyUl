@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tea House</title>
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/?size=512&id=80652&format=png"
+      type="image/x-icon"
+    />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          linearGradientColors: {
+            "btn-gradient": ["#F00", "#FF8938"],
+          },
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "title-color": "#1C1C1C",
+              "des-color": "#777",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-manrope">
+    <!-- Header section -->
+    <header class="container mx-auto lg:mt-20">
+      <!-- Layout - Hero / banner section -->
+      <div class="hero">
+        <div class="hero-content flex-col lg:space-x-12 lg:flex-row">
+          <div class="space-y-8">
+            <h1
+              class="text-title-color text-7xl font-extrabold leading-[100px]"
+            >
+              It's good <br />
+              tea time at The <br />
+              Tea House
+            </h1>
+            <p class="text-des-color text-lg font-medium">
+              Tea and Botanical Solutions Supplier Give Optimum <br />
+              Satisfaction To Your Taste Buds.
+            </p>
+            <button
+              class="btn bg-gradient-to-r from-[#F00] to-[#FF8938] text-white text-xl font-bold capitalize"
+            >
+              Explore More <img src="./images/arrow.png" alt="" />
+            </button>
+          </div>
+          <div>
+            <img src="./images/banner.png" class="" />
+            <!-- Ratings badge -->
+            <div
+              class="-mt-16 md:-mt-28 md:ml-14 flex items-center gap-4 bg-white drop-shadow-lg px-7 py-5 w-52 md:w-72 rounded-xl"
+            >
+              <img src="./images/star.svg" alt="star" />
+              <div>
+                <h3 class="text-title-color text-3xl font-extrabold">5.00</h3>
+                <p class="text-des-color font-semibold">Trust Pilot Ratings</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main section -->
+    <main class="container mx-auto">
+      <!-- Featured section -->
+      <section class="mt-32 text-center">
+        <h1 class="text-title-color text-5xl font-extrabold">
+          Our Featured Products
+        </h1>
+        <p class="text-des-color font-medium leading-7 mt-5 mb-12">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, <br />
+          by injected humour, or randomised words which don't look even slightly
+          believable.
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer></footer>
+  </body>
+</html>
