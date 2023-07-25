@@ -29,11 +29,15 @@
       tailwind.config = {
         theme: {
           extend: {
+            backgroundImage: {
+              "super-bg": "url('./images/bg_cup.png')",
+            },
             colors: {
               clifford: "#da373d",
               "title-color": "#1C1C1C",
               "des-color": "#777",
               "super-color": "#F4F4F4",
+              "foot-color": "#494949",
             },
           },
         },
@@ -48,10 +52,12 @@
   </head>
   <body class="font-manrope">
     <!-- Header section -->
-    <header class="container mx-auto lg:mt-20">
+    <header class="container mx-auto mt-8 lg:mt-20">
       <!-- Layout - Hero / banner section -->
-      <div class="hero">
-        <div class="hero-content flex-col lg:space-x-12 lg:flex-row">
+      <div class="mx-2">
+        <div
+          class="flex flex-col justify-between items-center lg:space-x-12 lg:flex-row"
+        >
           <div class="space-y-8">
             <h1
               class="text-title-color text-7xl font-extrabold leading-[100px]"
@@ -65,7 +71,7 @@
               Satisfaction To Your Taste Buds.
             </p>
             <button
-              class="btn bg-gradient-to-r from-[#F00] to-[#FF8938] text-white text-xl font-bold capitalize"
+              class="btn bg-gradient-to-l from-[#F00] to-[#FF8938] text-white text-xl font-bold capitalize"
             >
               Explore More <img src="./images/arrow.png" alt="" />
             </button>
@@ -226,7 +232,7 @@
       <section
         class="mt-32 mx-2 flex flex-col items-center xl:flex-row gap-20 bg-gradient-to-l from-[#F00] to-[#FF8938] rounded-xl px-8 xl:px-24 py-24"
       >
-        <div class="flex-1">
+        <div class="flex-1 bg-super-bg bg-no-repeat bg-bottom">
           <h1 class="text-super-color text-5xl font-extrabold">
             Meet Our Super <br />
             Clients
@@ -304,6 +310,71 @@
     </main>
 
     <!-- Footer section -->
-    <footer></footer>
+    <footer class="mt-32 bg-gradient-to-l from-[#ff00001a] to-[#ff89381a]">
+      <div class="container mx-auto py-32">
+        <div class="mx-4">
+          <div class="flex justify-between items-center">
+            <img src="./images/cup.png" alt="" />
+            <p class="space-x-10">
+              <span class="text-foot-color text-xl font-medium"
+                >Ready to get started?</span
+              >
+              <button
+                class="btn bg-gradient-to-l from-[#F00] to-[#FF8938] text-white text-xl font-bold capitalize"
+              >
+                Get Started
+              </button>
+            </p>
+          </div>
+
+          <div class="footer mt-24">
+            <div>
+              <span class="footer-title">Services</span>
+              <a class="link link-hover">Branding</a>
+              <a class="link link-hover">Design</a>
+              <a class="link link-hover">Marketing</a>
+              <a class="link link-hover">Advertisement</a>
+            </div>
+            <div>
+              <span class="footer-title">Company</span>
+              <a class="link link-hover">About us</a>
+              <a class="link link-hover">Contact</a>
+              <a class="link link-hover">Jobs</a>
+              <a class="link link-hover">Press kit</a>
+            </div>
+            <div>
+              <span class="footer-title">Legal</span>
+              <a class="link link-hover">Terms of use</a>
+              <a class="link link-hover">Privacy policy</a>
+              <a class="link link-hover">Cookie policy</a>
+            </div>
+            <div>
+              <span class="footer-title">Subscribe to our Newsletter</span>
+              <div class="form-control w-80">
+                <div class="relative">
+                  <input
+                    type="text"
+                    placeholder="Email address"
+                    class="py-4 bg-transparent border-b border-foot-color outline-none"
+                  />
+                  <button
+                    class="btn bg-gradient-to-l from-[#F00] to-[#FF8938] absolute top-0 right-0 rounded-full"
+                  >
+                    <img src="./images/greater.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-10 text-center">
+            <p>
+              Copyright © 2023 - All right reserved by UIDesign.to <br />
+              © Developed by Ashikur Rahman, CSE, DIU
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
